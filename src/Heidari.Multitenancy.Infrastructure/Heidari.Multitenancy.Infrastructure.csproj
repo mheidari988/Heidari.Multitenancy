@@ -12,6 +12,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet packaging -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Heidari.Multitenancy.Infrastructure</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Infrastructure integrations for Heidari.Multitenancy (EF Core, persistence helpers).</Description>
+    <PackageTags>multitenancy;infrastructure;efcore</PackageTags>
   </PropertyGroup>
 
 </Project>

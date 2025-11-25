@@ -16,10 +16,6 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Heidari.Multitenancy.Web</PackageId>
 		<Version>0.1.0</Version>
-		<Authors>Reza Heidari</Authors>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/mheidari988/Heidari.Multitenancy</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/mheidari988/Heidari.Multitenancy</RepositoryUrl>
 		<Description>ASP.NET Core middleware + HTTP tenant resolution for Heidari.Multitenancy.</Description>
 		<PackageTags>aspnetcore;middleware;tenant;multitenancy</PackageTags>
 	</PropertyGroup>
