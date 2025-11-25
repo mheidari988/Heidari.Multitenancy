@@ -16,9 +16,13 @@
     <!-- NuGet packaging -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Heidari.Multitenancy.Infrastructure</PackageId>
-    <Version>0.1.0</Version>
     <Description>Infrastructure integrations for Heidari.Multitenancy (EF Core, persistence helpers).</Description>
     <PackageTags>multitenancy;infrastructure;efcore</PackageTags>
   </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>

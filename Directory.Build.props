@@ -6,6 +6,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/mheidari988/Heidari.Multitenancy</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mheidari988/Heidari.Multitenancy</RepositoryUrl>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerAutoIncrement>patch</MinVerAutoIncrement>
   </PropertyGroup>
 
 </Project>

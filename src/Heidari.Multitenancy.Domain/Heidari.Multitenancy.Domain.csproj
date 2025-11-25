@@ -7,8 +7,13 @@
 		<!-- NuGet packaging -->
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>Heidari.Multitenancy.Domain</PackageId>
-		<Version>0.1.0</Version>
 		<Description>Domain-level abstractions for Heidari.Multitenancy.</Description>
 		<PackageTags>multitenancy;clean-architecture;saas;tenant</PackageTags>
 	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MinVer" Version="6.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 </Project>
