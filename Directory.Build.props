@@ -1,0 +1,11 @@
+<Project>
+
+  <PropertyGroup>
+    <Authors>Reza Heidari</Authors>
+    <Company>Heidari</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/mheidari988/Heidari.Multitenancy</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mheidari988/Heidari.Multitenancy</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>

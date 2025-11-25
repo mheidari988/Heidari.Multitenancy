@@ -3,12 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heidari.Multitenancy.Domain", "src\Heidari.Multitenancy.Domain\Heidari.Multitenancy.Domain.csproj", "{5D699310-68C3-B139-5CFF-EBC8FCAAE8C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heidari.Multitenancy.Application", "src\Heidari.Multitenancy.Application\Heidari.Multitenancy.Application.csproj", "{6E904CA4-B474-A017-4E74-BBCC3E1AE435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heidari.Multitenancy.Infrastructure", "src\Heidari.Multitenancy.Infrastructure\Heidari.Multitenancy.Infrastructure.csproj", "{18834589-BD18-8A6B-5CCA-EE5778732A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heidari.Multitenancy.Web", "src\Heidari.Multitenancy.Web\Heidari.Multitenancy.Web.csproj", "{817D3E3A-CC22-EC18-7399-7307472FB5F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heidari.Multitenancy.Tests", "tests\Heidari.Multitenancy.Tests\Heidari.Multitenancy.Tests.csproj", "{9A7F57A7-44C5-3723-274A-217A95EDCC03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D699310-68C3-B139-5CFF-EBC8FCAAE8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D699310-68C3-B139-5CFF-EBC8FCAAE8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D699310-68C3-B139-5CFF-EBC8FCAAE8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D699310-68C3-B139-5CFF-EBC8FCAAE8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E904CA4-B474-A017-4E74-BBCC3E1AE435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E904CA4-B474-A017-4E74-BBCC3E1AE435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E904CA4-B474-A017-4E74-BBCC3E1AE435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E904CA4-B474-A017-4E74-BBCC3E1AE435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18834589-BD18-8A6B-5CCA-EE5778732A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18834589-BD18-8A6B-5CCA-EE5778732A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18834589-BD18-8A6B-5CCA-EE5778732A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18834589-BD18-8A6B-5CCA-EE5778732A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817D3E3A-CC22-EC18-7399-7307472FB5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817D3E3A-CC22-EC18-7399-7307472FB5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817D3E3A-CC22-EC18-7399-7307472FB5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817D3E3A-CC22-EC18-7399-7307472FB5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7F57A7-44C5-3723-274A-217A95EDCC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7F57A7-44C5-3723-274A-217A95EDCC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7F57A7-44C5-3723-274A-217A95EDCC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7F57A7-44C5-3723-274A-217A95EDCC03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DCC2CC3-3AA8-4CD9-A554-B7605E82DDAA}
 	EndGlobalSection
 EndGlobal

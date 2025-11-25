@@ -1,9 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
+		<!-- NuGet packaging -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Heidari.Multitenancy.Domain</PackageId>
+		<Version>0.1.0</Version>
+		<Authors>Reza Heidari</Authors>
+		<Company>Heidari</Company>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/mheidari988/Heidari.Multitenancy</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mheidari988/Heidari.Multitenancy</RepositoryUrl>
+		<Description>Domain-level abstractions for Heidari.Multitenancy.</Description>
+		<PackageTags>multitenancy;clean-architecture;saas;tenant</PackageTags>
+	</PropertyGroup>
 </Project>

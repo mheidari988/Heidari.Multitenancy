@@ -1,17 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <ProjectReference Include="..\Heidari.Multitenancy.Infrastructure\Heidari.Multitenancy.Infrastructure.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Heidari.Multitenancy.Infrastructure\Heidari.Multitenancy.Infrastructure.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+	</ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!-- NuGet -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Heidari.Multitenancy.Web</PackageId>
+		<Version>0.1.0</Version>
+		<Authors>Reza Heidari</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/mheidari988/Heidari.Multitenancy</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mheidari988/Heidari.Multitenancy</RepositoryUrl>
+		<Description>ASP.NET Core middleware + HTTP tenant resolution for Heidari.Multitenancy.</Description>
+		<PackageTags>aspnetcore;middleware;tenant;multitenancy</PackageTags>
+	</PropertyGroup>
 
 </Project>

@@ -1,13 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <ProjectReference Include="..\Heidari.Multitenancy.Domain\Heidari.Multitenancy.Domain.csproj" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\Heidari.Multitenancy.Domain\Heidari.Multitenancy.Domain.csproj" />
+	</ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		
+		<!-- NuGet -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Heidari.Multitenancy.Application</PackageId>
+		<Version>0.1.0</Version>
+		<Authors>Reza Heidari</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/mheidari988/Heidari.Multitenancy</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mheidari988/Heidari.Multitenancy</RepositoryUrl>
+		<Description>Application-level utilities and CQRS behaviors for Heidari.Multitenancy.</Description>
+		<PackageTags>multitenancy;CQRS;clean-architecture</PackageTags>
+	</PropertyGroup>
 </Project>
