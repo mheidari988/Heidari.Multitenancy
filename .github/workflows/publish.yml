@@ -24,6 +24,9 @@ jobs:
       - name: Build
         run: dotnet build Heidari.Multitenancy.sln --configuration Release --no-restore
 
+      - name: Test
+        run: dotnet test Heidari.Multitenancy.sln --configuration Release --no-build
+
       - name: Pack
         run: dotnet pack Heidari.Multitenancy.sln --configuration Release --no-build --output ./artifacts
 
