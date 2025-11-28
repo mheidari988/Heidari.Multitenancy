@@ -34,4 +34,4 @@ public async Task HandleAsync(JobPayload payload, CancellationToken ct)
 - In repositories or query handlers, compare the expected tenant to the context tenant and throw `TenantAccessException` on mismatch.
 - Prefer passing `TenantId` explicitly into queries/commands to keep tenant checks obvious.
 
-Keep tenant resolution close to the host boundary, and let the rest of your application depend only on the `ITenantContext` contract and domain exceptions. This preserves purity while enabling enforcement wherever tenant mismatches matter.
+Keep tenant resolution close to the host boundary, and let the rest of your application depend only on the `ITenantContext` contract and domain exceptions. If you use the application package, surface the same resolved tenant through your `ICurrentTenant` implementation so the MediatR behaviors can enforce and validate it. This preserves purity while enabling enforcement wherever tenant mismatches matter.

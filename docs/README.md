@@ -5,4 +5,7 @@ This folder contains the documentation for the Heidari.Multitenancy library. It 
 - [Overview](overview.md) – project scope, goals, and design principles.
 - [Getting started](getting-started.md) – install the domain package and wire up a minimal tenant-aware flow.
 - Concepts: [Tenant abstractions](concepts/tenant-abstractions.md) – detailed explanation of the domain types provided by the library.
-- Guides: [Tenant context propagation](guides/tenant-context-propagation.md) – patterns for flowing tenant information through different hosts (web, background jobs, messaging).
+- Guides:
+  - [Tenant context propagation](guides/tenant-context-propagation.md) – patterns for flowing tenant information through different hosts (web, background jobs, messaging).
+  - [Application behaviors](guides/application-behaviors.md) – how to plug in the MediatR behaviors and host-specific implementations of `ICurrentTenant`, `ICacheProvider`, and `ITenantProvider`.
+  - [Application contracts](guides/application-contracts.md) – detailed guidance and examples for `ICurrentTenant`, `ITenantProvider`, `ICacheable`, and `ICacheProvider`.

@@ -80,6 +80,16 @@ public sealed class InvoiceService
 }
 ```
 
+## 5) (Optional) Add the application package for MediatR pipelines and caching
+- Install: `dotnet add package Heidari.Multitenancy.Application`
+- Register behaviors: `TenantEnforcementBehavior`, `TenantValidationBehavior`, and `TenantScopedCacheBehavior`.
+- Provide host-specific services:
+  - `ICurrentTenant`: read the tenant from your host boundary (JWT, header, route) and expose it for the current scope.
+  - `ICacheProvider`: wrap your cache of choice without leaking framework types.
+  - `ITenantProvider`: look up tenant metadata (id, name, connection string) from your tenant registry.
+
+See the [Application behaviors](guides/application-behaviors.md) guide for a full walkthrough.
+
 Next steps:
 - Learn the abstractions in depth: [Tenant abstractions](concepts/tenant-abstractions.md).
 - See how to propagate tenant info through different hosts: [Tenant context propagation](guides/tenant-context-propagation.md).

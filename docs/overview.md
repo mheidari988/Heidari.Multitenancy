@@ -10,12 +10,13 @@ Heidari.Multitenancy provides lightweight, dependency-free abstractions to make 
 - Documentation and samples: clear guides and runnable examples to minimize adoption friction.
 
 ## What this repository provides today
-- A domain package (`Heidari.Multitenancy.Domain`) with value objects, interfaces, and domain exceptions for tenant-aware models.
+- Domain package (`Heidari.Multitenancy.Domain`) with value objects, interfaces, and domain exceptions for tenant-aware models.
+- Application package (`Heidari.Multitenancy.Application`) with MediatR pipeline behaviors (tenant enforcement, tenant validation, tenant-scoped caching) and application-layer contracts (`ICurrentTenant`, `ITenantProvider`, `ICacheProvider`, `ICacheable`).
 - XML-documented APIs to ease discovery in IDEs and generated references.
 
 ## Roadmap (high level)
-- Application/infrastructure packages for common hosts (ASP.NET Core, EF Core, workers).
+- Infrastructure packages for common hosts (ASP.NET Core, EF Core, workers).
 - Samples that showcase end-to-end tenant resolution and enforcement.
 - Published API docs (DocFX) alongside conceptual guides.
 
-For details on the current domain types, see [Tenant abstractions](concepts/tenant-abstractions.md). For usage walkthroughs, start with [Getting started](getting-started.md) and the [Tenant context propagation](guides/tenant-context-propagation.md) guide.
+For details on the current domain types, see [Tenant abstractions](concepts/tenant-abstractions.md). For usage walkthroughs, start with [Getting started](getting-started.md), [Tenant context propagation](guides/tenant-context-propagation.md), [Application behaviors](guides/application-behaviors.md), and [Application contracts](guides/application-contracts.md).
