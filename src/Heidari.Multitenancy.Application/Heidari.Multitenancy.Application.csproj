@@ -14,6 +14,7 @@
 		<PackageTags>multitenancy;CQRS;clean-architecture</PackageTags>
 	</PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="MediatR" Version="12.2.0" />
 		<PackageReference Include="MinVer" Version="6.0.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
